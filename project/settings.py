@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 
 # account for the possibility of multuple files of static material for each app
 STATICFILES_DIRS = [
-    STATIC_DIR,
+    os.path.join(BASE_DIR, 'static'),
 ]
