@@ -3,5 +3,4 @@
 __pycache__
 new_django
 db.sqlite3
-/static
 .DS_Store
