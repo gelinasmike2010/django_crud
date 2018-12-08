@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "books/base.html" %}
+
+{% block content %}
+
+<p>here are the number of books: {{ book_count }}</p>
+<p>here is the sum of all the years: {{ sum_of_years }}</p>
+<p>here is the average year of all the books: {{ average_of_years }}</p>
+
+<table class ="table">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Year Published</th>
+  </tr>
+  {% for item in book_list %}
+  <tr>
+    <td> {{ item.book_title }} </td>
+    <td> {{ item.book_author }} </td>
+    <td> {{ item.book_year }} </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
