@@ -14,7 +14,6 @@ def home(request):
 
     average_of_years = (sum_of_years / book_count)
 
-
 # context is a dictionary of key-values
 # call upon your variables by thir keys (within template tags) in templates
     context = {

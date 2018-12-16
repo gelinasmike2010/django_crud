@@ -19,5 +19,6 @@ from books import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('books.urls'))
+    path('', include('books.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
